@@ -1,0 +1,344 @@
+{
+  "version": 4,
+  "terraform_version": "1.5.7",
+  "serial": 11,
+  "lineage": "99621a3e-3ea1-4052-8baa-ebcf0bb7076e",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.gke_cluster",
+      "mode": "managed",
+      "type": "google_container_cluster",
+      "name": "this",
+      "provider": "module.gke_cluster.provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "addons_config": [
+              {
+                "cloudrun_config": [],
+                "config_connector_config": [],
+                "dns_cache_config": [],
+                "gce_persistent_disk_csi_driver_config": [
+                  {
+                    "enabled": true
+                  }
+                ],
+                "gcp_filestore_csi_driver_config": [],
+                "gcs_fuse_csi_driver_config": [],
+                "gke_backup_agent_config": [],
+                "horizontal_pod_autoscaling": [],
+                "http_load_balancing": [],
+                "lustre_csi_driver_config": [],
+                "network_policy_config": [
+                  {
+                    "disabled": true
+                  }
+                ],
+                "parallelstore_csi_driver_config": [],
+                "ray_operator_config": [],
+                "stateful_ha_config": []
+              }
+            ],
+            "allow_net_admin": null,
+            "anonymous_authentication_config": [
+              {
+                "mode": "ENABLED"
+              }
+            ],
+            "authenticator_groups_config": [],
+            "binary_authorization": [
+              {
+                "enabled": false,
+                "evaluation_mode": ""
+              }
+            ],
+            "cluster_autoscaling": [
+              {
+                "auto_provisioning_defaults": [],
+                "auto_provisioning_locations": [],
+                "autoscaling_profile": "BALANCED",
+                "default_compute_class_enabled": false,
+                "enabled": false,
+                "resource_limits": []
+              }
+            ],
+            "cluster_ipv4_cidr": "10.36.0.0/14",
+            "confidential_nodes": [],
+            "control_plane_endpoints_config": [
+              {
+                "dns_endpoint_config": [
+                  {
+                    "allow_external_traffic": false,
+                    "enable_k8s_certs_via_dns": false,
+                    "enable_k8s_tokens_via_dns": false,
+                    "endpoint": "gke-61254b19a75e4b9694104bbb1693ff40b50c-1036210483407.us-central1.gke.goog"
+                  }
+                ],
+                "ip_endpoints_config": [
+                  {
+                    "enabled": true
+                  }
+                ]
+              }
+            ],
+            "cost_management_config": [],
+            "database_encryption": [
+              {
+                "key_name": "",
+                "state": "DECRYPTED"
+              }
+            ],
+            "datapath_provider": "",
+            "default_max_pods_per_node": 110,
+            "default_snat_status": [
+              {
+                "disabled": false
+              }
+            ],
+            "deletion_protection": false,
+            "description": "",
+            "disable_l4_lb_firewall_reconciliation": false,
+            "dns_config": [],
+            "effective_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "enable_autopilot": false,
+            "enable_cilium_clusterwide_network_policy": false,
+            "enable_fqdn_network_policy": false,
+            "enable_intranode_visibility": false,
+            "enable_k8s_beta_apis": [],
+            "enable_kubernetes_alpha": false,
+            "enable_l4_ilb_subsetting": false,
+            "enable_legacy_abac": false,
+            "enable_multi_networking": false,
+            "enable_shielded_nodes": true,
+            "enable_tpu": false,
+            "endpoint": "34.58.198.163",
+            "enterprise_config": [
+              {
+                "cluster_tier": "STANDARD",
+                "desired_tier": ""
+              }
+            ],
+            "fleet": [],
+            "gateway_api_config": [],
+            "gke_auto_upgrade_config": [],
+            "id": "projects/lateral-linker-475709-t4/locations/us-central1/clusters/main",
+            "identity_service_config": [],
+            "in_transit_encryption_config": "",
+            "initial_node_count": 1,
+            "ip_allocation_policy": [
+              {
+                "additional_ip_ranges_config": [],
+                "additional_pod_ranges_config": [],
+                "auto_ipam_config": [],
+                "cluster_ipv4_cidr_block": "10.36.0.0/14",
+                "cluster_secondary_range_name": "gke-main-pods-61254b19",
+                "network_tier_config": [
+                  {
+                    "network_tier": "NETWORK_TIER_DEFAULT"
+                  }
+                ],
+                "pod_cidr_overprovision_config": [
+                  {
+                    "disabled": false
+                  }
+                ],
+                "services_ipv4_cidr_block": "34.118.224.0/20",
+                "services_secondary_range_name": "",
+                "stack_type": "IPV4"
+              }
+            ],
+            "label_fingerprint": "78cdf2f6",
+            "location": "us-central1",
+            "logging_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "WORKLOADS"
+                ]
+              }
+            ],
+            "logging_service": "logging.googleapis.com/kubernetes",
+            "maintenance_policy": [],
+            "master_auth": [
+              {
+                "client_certificate": "",
+                "client_certificate_config": [
+                  {
+                    "issue_client_certificate": false
+                  }
+                ],
+                "client_key": "",
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMRENDQXBTZ0F3SUJBZ0lRUWdTVTNxbmN3Y0YzWVlibFRXaXJ3VEFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlRNFpETmxPRGsyTWkweE1qRTBMVFF3TkRBdE9HUTRPUzFqWmprNU1EVXdaRE5qTURZdwpJQmNOTWpVeE1qRXhNVGMwTnpBeFdoZ1BNakExTlRFeU1EUXhPRFEzTURGYU1DOHhMVEFyQmdOVkJBTVRKRGhrCk0yVTRPVFl5TFRFeU1UUXROREEwTUMwNFpEZzVMV05tT1Rrd05UQmtNMk13TmpDQ0FhSXdEUVlKS29aSWh2Y04KQVFFQkJRQURnZ0dQQURDQ0FZb0NnZ0dCQU81VmN2OTdaTnVMLzFnT1JzTVR5a3FsWWtJVjN3SytYTmhObGlVMgo2RWViZUNZUy9vTFdGNUdkaXR2STF1d3FLdkM2Q3dmVHBaaExxY2xITy9TTlBpdlh2QkpTRTUzN0tpd3NaYVYwCkllNzlkM281VEVlK2JQQ2xaS2RERVQwdDYzZFo1c0EvYkpyR3grNFQ5c09LYlhzekMyRFNOQ051cHFNa0diN3cKRnV4bDlYRFFwbEs0bVVwYjRDeEp2c3hzMy9TaHFqbVZPWVpmZCt6OWpRR3FRZTNEU1FrNEU2RjZnSnVzMzY5LwpDRmZwN3hNbUZlNEVnT2FKNFMvVDllK1pJKzNaekJpRmxpSkFISEpPc0kxbDg3b3RTN0l3Q0pocWlnUzhPY0ZnCjhtMmd4WWMrY1dkQlpEVVVYUDFNRUx3WkZaL29udnA0UFM0QUtYVmxyYnBQQzRXUW1RMUF5Ti93SUtyZjNuYm0KczN2eEdBdTFQSnZBY0dUK0VkVk9DNmptSCtQZUprdGsrc04vZVJ0ZTJ1UTEvaGsrek1VWVhSZ1ZLQ1JlV2F3TApFQ3BuYkNzUHhkSHFjeHZsdXhQUDBBY09zT0lSUDlsVUhOcEpCM1hQNzhyb0F6aytTQ05OdVpwZGJrWlBLMW82CmZsaW9HVlNTZW43SUd0YnJudnh6QmlBSVpRSURBUUFCbzBJd1FEQU9CZ05WSFE4QkFmOEVCQU1DQWdRd0R3WUQKVlIwVEFRSC9CQVV3QXdFQi96QWRCZ05WSFE0RUZnUVVrUW5lTzdBQkdmV2dkdGJ1cnJPYUpIamV3dDB3RFFZSgpLb1pJaHZjTkFRRUxCUUFEZ2dHQkFINXA3L2RQdElNeDh5c2ZPQjA1NDNvQytjWXlUY1paR1d4SG5TT2Z2Z09GCjVoV1VqKzJ3YWFtOGZLY2dObFFxdmF5eHliZ2NSM1d1TGppM3ovUlZ4UjBmRDZ6NGZNeE85dC9CS2owM2FLTSsKVGRqYjRGQ2FwcW1seDkyRWRWS1RMbW0zclQyVXZHNGNKUWRlVE02eTd2N3VFNmxvYXQ3eU04RjB0MVFhZ1RScApxUnhEaGtvNFExNHk0OGtYVzV6Vnc4WWQzYTFlSitDMHRYelNaS01samkwU1doWFR2ZUNEWXhWMFhQNGtHMW9sCmxVRVRGdzhzZThGWHBMdW0yTFVvTDZneEtiQzdGbUkwNW5Wbkd1dnRVUmdXVEVzcjlHaWN3OXZIZFBUamt4dHIKTlJuN25LaXhwcDNFYmwwaTN5dmgwM2VhSDMyTHJoTjB6WFdNUTF4cDFNdnV4cURCYVl6dXpsc0pCTUtBcXlzcgp1MkVOdzg3a0ZqK3B4TUtxNm9tTGZibW9FclR5L0s3dFhZTnpPOFVzeEcyaVVCR3pGV1ROdkdBazFXR216MS9kCnhZZkdSbVBhd2djdU1wUjlHWkpBRnJHeGo2U1lUWStWVzcyU3JTVlFlTFlQalBOMGt6bFRLY1AwTlBORWwrLzQKYmdVdjk3RUQ0WTBRVDVLc3BMNUFsUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+              }
+            ],
+            "master_authorized_networks_config": [],
+            "master_version": "1.33.5-gke.1308000",
+            "mesh_certificates": [],
+            "min_master_version": null,
+            "monitoring_config": [
+              {
+                "advanced_datapath_observability_config": [
+                  {
+                    "enable_metrics": false,
+                    "enable_relay": false
+                  }
+                ],
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "STATEFULSET",
+                  "JOBSET",
+                  "STORAGE",
+                  "HPA",
+                  "POD",
+                  "DAEMONSET",
+                  "DEPLOYMENT",
+                  "CADVISOR",
+                  "KUBELET",
+                  "DCGM"
+                ],
+                "managed_prometheus": [
+                  {
+                    "auto_monitoring_config": [],
+                    "enabled": true
+                  }
+                ]
+              }
+            ],
+            "monitoring_service": "monitoring.googleapis.com/kubernetes",
+            "name": "main",
+            "network": "projects/lateral-linker-475709-t4/global/networks/default",
+            "network_performance_config": [],
+            "network_policy": [
+              {
+                "enabled": false,
+                "provider": "PROVIDER_UNSPECIFIED"
+              }
+            ],
+            "networking_mode": "VPC_NATIVE",
+            "node_config": [],
+            "node_locations": [
+              "us-central1-a",
+              "us-central1-b",
+              "us-central1-f"
+            ],
+            "node_pool": [],
+            "node_pool_auto_config": [
+              {
+                "linux_node_config": [],
+                "network_tags": [],
+                "node_kubelet_config": [
+                  {
+                    "insecure_kubelet_readonly_port_enabled": "FALSE"
+                  }
+                ],
+                "resource_manager_tags": {}
+              }
+            ],
+            "node_pool_defaults": [
+              {
+                "node_config_defaults": [
+                  {
+                    "containerd_config": [],
+                    "gcfs_config": [],
+                    "insecure_kubelet_readonly_port_enabled": "FALSE",
+                    "logging_variant": "DEFAULT"
+                  }
+                ]
+              }
+            ],
+            "node_version": "1.33.5-gke.1308000",
+            "notification_config": [
+              {
+                "pubsub": [
+                  {
+                    "enabled": false,
+                    "filter": [],
+                    "topic": ""
+                  }
+                ]
+              }
+            ],
+            "operation": null,
+            "pod_autoscaling": [
+              {
+                "hpa_profile": "PERFORMANCE"
+              }
+            ],
+            "private_cluster_config": [
+              {
+                "enable_private_endpoint": false,
+                "enable_private_nodes": false,
+                "master_global_access_config": [
+                  {
+                    "enabled": false
+                  }
+                ],
+                "master_ipv4_cidr_block": "",
+                "peering_name": "",
+                "private_endpoint": "10.128.0.2",
+                "private_endpoint_subnetwork": "",
+                "public_endpoint": "34.58.198.163"
+              }
+            ],
+            "private_ipv6_google_access": "",
+            "project": "lateral-linker-475709-t4",
+            "rbac_binding_config": [
+              {
+                "enable_insecure_binding_system_authenticated": true,
+                "enable_insecure_binding_system_unauthenticated": true
+              }
+            ],
+            "release_channel": [
+              {
+                "channel": "REGULAR"
+              }
+            ],
+            "remove_default_node_pool": true,
+            "resource_labels": {},
+            "resource_usage_export_config": [],
+            "secret_manager_config": [
+              {
+                "enabled": false,
+                "rotation_config": []
+              }
+            ],
+            "security_posture_config": [
+              {
+                "mode": "BASIC",
+                "vulnerability_mode": "VULNERABILITY_MODE_UNSPECIFIED"
+              }
+            ],
+            "self_link": "https://container.googleapis.com/v1/projects/lateral-linker-475709-t4/locations/us-central1/clusters/main",
+            "service_external_ips_config": [
+              {
+                "enabled": false
+              }
+            ],
+            "services_ipv4_cidr": "34.118.224.0/20",
+            "subnetwork": "projects/lateral-linker-475709-t4/regions/us-central1/subnetworks/default",
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "timeouts": null,
+            "tpu_ipv4_cidr_block": "",
+            "user_managed_keys_config": [],
+            "vertical_pod_autoscaling": [],
+            "workload_identity_config": [
+              {
+                "workload_pool": "lateral-linker-475709-t4.svc.id.goog"
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAwLCJkZWxldGUiOjI0MDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMDAsInVwZGF0ZSI6MzYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMiJ9"
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
+
